@@ -1,9 +1,15 @@
-import React from 'react'
-
+import React from "react";
+import Feed from "./Feed/Feed";
+import FeedModal from "./Feed/FeedModal";
+import FeedPhotos from "./Feed/FeedPhotos";
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <section className="container mainContainer">
+      <Feed />
+      <FeedModal/>
+      <FeedPhotos/>
+    </section>
+  );
+};
 
-export default Home
+export default Home;

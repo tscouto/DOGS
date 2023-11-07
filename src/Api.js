@@ -49,15 +49,25 @@ export function USER_POST(body) {
   };
 }
 
-export function PHOTO_POST(formData,token) {
+export function PHOTO_POST(formData, token) {
   return {
     url: API_URL + "/api/photo",
     options: {
-      method: "GET",
+      method: "POST",
       headers: {
         Authorization: "Bearer " + token,
       },
-      body:formData,
+      body: formData,
+    },
+  };
+}
+
+export function PHOTOS_GET({ page, total, user }) {
+  return {
+    url: `${API_URL}/api/photo/?_page=${page}&_total=${total}&_user=${user}`,
+    options: {
+      method: "GET",
+      caches: "no-store",
     },
   };
 }
