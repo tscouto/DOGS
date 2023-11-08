@@ -28,13 +28,13 @@
   outline: none;
 }
 
-.nav a.active {
+.nav a:global(.active) {
   background: white;
   box-shadow: 0 0 0 3px #fea;
   border-color: #fb1;
 }
 
-.nav a.active svg > * {
+.nav a:global(.active) svg > * {
   fill: #fb1;
 }
 

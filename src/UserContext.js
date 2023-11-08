@@ -18,9 +18,8 @@ export const UserStorage = ({ children }) => {
       setLoading(false);
       setLogin(false);
       window.localStorage.removeItem("token");
-      navigate("/login");
     },
-    [navigate]
+    []
   );
 
   async function getUser(token) {
@@ -61,7 +60,7 @@ export const UserStorage = ({ children }) => {
           const response = await fetch(url, options);
           if (!response.ok) throw new Error("Token inválido");
           await getUser(token);
-          navigate("/conta");
+         
         } catch (err) {
           userLogout();
         } finally {

@@ -56,7 +56,7 @@ const UserPhotoPost = () => {
           onChange={handleImgChange}
         />
         {loading ? (
-          <Button disabled>Enviad...</Button>
+          <Button disabled>Enviado...</Button>
         ) : (
           <Button>Enviar</Button>
         )}
