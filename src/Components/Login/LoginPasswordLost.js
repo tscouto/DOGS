@@ -1,10 +1,7 @@
-import React from 'react'
-import styles from './LoginPasswordReset.module.css'
+import React from 'react';
 
 const LoginPasswordLost = () => {
-  return (
-    <div style={styles}>LoginPasswordLost</div>
-  )
-}
+  return <div></div>;
+};
 
-export default LoginPasswordLost
+export default LoginPasswordLost;

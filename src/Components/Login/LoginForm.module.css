@@ -8,11 +8,12 @@
   padding: 0.5rem 0;
   line-height: 1;
 }
+
 .perdeu::after {
-  content: "";
+  content: '';
   height: 2px;
   width: 100%;
-  background: currentColor; /* esse código utiliza a cor que foi definido na parte cima  */
+  background: currentColor;
   display: block;
 }
 
@@ -32,7 +33,7 @@
 }
 
 .subtitle::after {
-  content: "";
+  content: '';
   display: block;
   background: #ddd;
   height: 0.5rem;
